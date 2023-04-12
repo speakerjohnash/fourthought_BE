@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Copier</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Text Copier</h3>
+  <textarea id="textArea" rows="5" cols="30"></textarea><br>
+  <label for="certainty">Certainty (0-100%):</label>
+  <input type="number" id="certainty" min="0" max="100" value="100"><br>
+  <button id="saveBtn">Save</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

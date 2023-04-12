@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Text Copier",
+  "description": "A simple extension to copy text and save it with a timestamp and certainty level.",
+  "version": "1.0",
+  "permissions": ["storage", "contextMenus"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["*://*/*"]
+}
